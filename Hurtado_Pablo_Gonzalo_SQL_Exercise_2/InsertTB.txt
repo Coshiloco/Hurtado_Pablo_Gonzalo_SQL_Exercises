@@ -1,0 +1,47 @@
+-- Insert data into Student table
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (1, 'Dupont', 'Alice', '1990-05-01', '123 Main St', '10001', 'Villella');
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (2, 'Durand', 'Bob', '1992-07-15', '456 King Rd', '10002', 'Villella');
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (3, 'Martin', 'Charlie', '1994-03-20', '789 Queen Ave', '10003', 'Bellville');
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (4, 'Smith', 'David', '1991-11-30', '101 Pine St', '10004', 'Villella');
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (5, 'Johnson', 'Eve', '1993-01-10', '202 Elm Rd', '10005', 'Bellville');
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (6, 'Williams', 'Frank', '1995-09-05', '303 Oak Ave', '10006', 'Mapletown');
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city) VALUES (7, 'Brown', 'Grace', '1989-12-15', '404 Cedar Ln', '10007', 'Mapletown');
+
+-- Insert data into Matter table
+INSERT INTO Matter (codemat, wording, coef) VALUES ('MAT01', 'Mathematics', 1.5);
+INSERT INTO Matter (codemat, wording, coef) VALUES ('MAT02', 'Physics', 1.2);
+INSERT INTO Matter (codemat, wording, coef) VALUES ('MAT03', 'History', 1.0);
+
+-- Insert data into Test table
+INSERT INTO Test (numtest, testdate, place, codemat) VALUES (1, '2014-01-15', 'Room 101', 'MAT01');
+INSERT INTO Test (numtest, testdate, place, codemat) VALUES (2, '2014-02-20', 'Room 102', 'MAT02');
+INSERT INTO Test (numtest, testdate, place, codemat) VALUES (3, '2014-05-10', 'Room 103', 'MAT02');
+INSERT INTO Test (numtest, testdate, place, codemat) VALUES (4, '2014-08-05', 'Room 104', 'MAT03');
+INSERT INTO Test (numtest, testdate, place, codemat) VALUES (5, '2014-10-25', 'Room 105', 'MAT01');
+
+-- Insert data into Notation table
+INSERT INTO Notation (numstud, numtest, score) VALUES (1, 1, 13.88);
+INSERT INTO Notation (numstud, numtest, score) VALUES (6, 1, 12.66);
+INSERT INTO Notation (numstud, numtest, score) VALUES (7, 1, 10.75);
+INSERT INTO Notation (numstud, numtest, score) VALUES (5, 1, 7.1);
+INSERT INTO Notation (numstud, numtest, score) VALUES (3, 1, 10.59);
+INSERT INTO Notation (numstud, numtest, score) VALUES (1, 2, 20);
+INSERT INTO Notation (numstud, numtest, score) VALUES (5, 2, 13.31);
+INSERT INTO Notation (numstud, numtest, score) VALUES (7, 2, 14.83);
+INSERT INTO Notation (numstud, numtest, score) VALUES (6, 2, 19.47);
+INSERT INTO Notation (numstud, numtest, score) VALUES (4, 2, 15.53);
+INSERT INTO Notation (numstud, numtest, score) VALUES (2, 3, 12.79);
+INSERT INTO Notation (numstud, numtest, score) VALUES (4, 3, 20);
+INSERT INTO Notation (numstud, numtest, score) VALUES (7, 3, 8.87);
+INSERT INTO Notation (numstud, numtest, score) VALUES (6, 3, 19.64);
+INSERT INTO Notation (numstud, numtest, score) VALUES (5, 3, 13.39);
+INSERT INTO Notation (numstud, numtest, score) VALUES (2, 4, 19.54);
+INSERT INTO Notation (numstud, numtest, score) VALUES (1, 4, 10.47);
+INSERT INTO Notation (numstud, numtest, score) VALUES (7, 4, 16.58);
+INSERT INTO Notation (numstud, numtest, score) VALUES (4, 4, 17.36);
+INSERT INTO Notation (numstud, numtest, score) VALUES (6, 4, 7.02);
+INSERT INTO Notation (numstud, numtest, score) VALUES (1, 5, 11.46);
+INSERT INTO Notation (numstud, numtest, score) VALUES (3, 5, 15.16);
+INSERT INTO Notation (numstud, numtest, score) VALUES (6, 5, 18.07);
+INSERT INTO Notation (numstud, numtest, score) VALUES (7, 5, 17.17);
+INSERT INTO Notation (numstud, numtest, score) VALUES (5, 5, 19.44);

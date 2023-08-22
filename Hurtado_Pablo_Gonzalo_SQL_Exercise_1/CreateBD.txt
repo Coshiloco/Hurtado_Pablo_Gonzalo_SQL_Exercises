@@ -1,0 +1,37 @@
+
+-- Create the Matter table
+CREATE TABLE Matter (
+    codemat CHAR PRIMARY KEY,
+    wording CHAR NOT NULL,
+    coef FLOAT NOT NULL
+);
+
+-- Create the Student table
+CREATE TABLE Student (
+    numstud INT PRIMARY KEY,
+    name CHAR NOT NULL,
+    firstname CHAR NOT NULL,
+    dateofbirth DATE NOT NULL,
+    street CHAR NOT NULL,
+    postalcod CHAR NOT NULL,
+    city CHAR NOT NULL
+);
+
+-- Create the Test table
+CREATE TABLE Test (
+    numtest INT PRIMARY KEY,
+    testdate DATE NOT NULL,
+    place CHAR NOT NULL,
+    codemat CHAR,
+    FOREIGN KEY (codemat) REFERENCES Matter(codemat)
+);
+
+-- Create the Notation table
+CREATE TABLE Notation (
+    numstud INT,
+    numtest INT,
+    score FLOAT NOT NULL,
+    PRIMARY KEY (numstud, numtest),
+    FOREIGN KEY (numstud) REFERENCES Student(numstud),
+    FOREIGN KEY (numtest) REFERENCES Test(numtest)
+);
